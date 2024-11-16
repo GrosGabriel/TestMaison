@@ -16,3 +16,13 @@ def get_empty_tiles_positions(grid):
                 res.append((i, j))
 
     return res
+
+    
+def get_to_empty_tiles_positions(grid):
+    res = []
+    for i in range(len(grid)):
+        for j in range(len(grid)):
+            if grid[i][j] in ['', ' ', '0', 0]:
+                res.append((i, j))
+
+    return res
