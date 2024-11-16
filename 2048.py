@@ -87,9 +87,10 @@ def grid_add_new_tile(grid):
 
 
 def inverse_cle_valeur(D):
+    """inverser la clé (cle)"""
     res = {}
-    for clé, valeur in D.items():
-        res[valeur] = clé
+    for cle, valeur in D.items():
+        res[valeur] = cle
     res['0'] = res['']
     return res
 
